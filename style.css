@@ -1,0 +1,215 @@
+/* Reset & Global */
+/* Default mode (light) */
+body {
+  background: #f9fafb;
+  color: #111827;
+  transition: 0.3s ease;
+}
+
+/* Saat dark mode aktif */
+body.dark {
+  background: #111827;
+  color: #f9fafb;
+}
+
+/* Tambahan dark mode untuk elemen lain */
+body.dark .card {
+  background: #1e293b;
+}
+
+body.dark .sidebar {
+  background: #0f172a;
+}
+
+body.dark footer {
+  background: #1e293b;
+  color: #f9fafb;
+}
+
+
+img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.layout {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #1f2937;
+  color: white;
+  padding: 30px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;       /* Pusatkan teks */
+  display: block;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #3b82f6; /* Garis biru di bawah */
+  width: 100%;               /* Pastikan sejajar penuh */
+}
+
+.sidebar .menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar .menu li {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar .menu a,
+.sidebar .menu button {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.sidebar .menu a:hover,
+.sidebar .menu button:hover {
+  color: #60a5fa;
+}
+
+/* Main Content */
+.main {
+  flex: 1; /* Biar lebar otomatis */
+  max-width: 1000px;
+  padding: 40px;
+  margin: 0 auto; /* Pusatkan */
+  background: white;
+  box-sizing: border-box;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #3b82f6;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+/* Section Style */
+section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Project Cards */
+.project-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+body.dark .card {
+  background: #1e293b;
+}
+
+/* Social Links */
+.social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.social a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+}
+
+.ig {
+  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366);
+}
+
+.wa {
+  background: #25d366;
+}
+
+.tt {
+  background: #000000;
+}
+
+.social a:hover {
+  opacity: 0.85;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #e5e7eb;
+  margin-top: 40px;
+  border-radius: 12px;
+}
+
+body.dark footer {
+  background: #1f2937;
+  color: #f9fafb;
+}
+
+h2 {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto 20px;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #3b82f6;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.menu a i {
+  margin-right: 8px;
+}
+
